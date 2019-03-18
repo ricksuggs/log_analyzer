@@ -1,0 +1,9 @@
+.venv
+.vscode
+description.txt
+app.egg-info/
+/**/__pycache__
+log_analyzer.db
+log_analyzer.test.db
+/**/.pytest_cache
+.eggs
