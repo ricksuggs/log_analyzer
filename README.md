@@ -14,6 +14,6 @@ Please note:
 * Run mock logging: `python ./mock/mock_activity.py`
 * Run log_analyzer app: `python ./app/start.py`
 * Configuration: See app/config.py
-* Build docker: sudo docker build -t log_analyzer .
-* Run docker: sudo docker run -it -v /tmp:/tmp log_analyzer python3 ./app/start.py
+* Build docker: `sudo docker build -t log_analyzer .`
+* Run docker: `sudo docker run -it -v /tmp:/tmp log_analyzer python3 ./app/start.py`
 
