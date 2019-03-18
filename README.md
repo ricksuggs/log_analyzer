@@ -6,6 +6,8 @@ Please note:
 
 * Timestamps in log file must match up with current datetime in *UTC* while runnning the app (`datetime.datetime.utcnow()`)
 * The app will only process new lines added to configured log file after starting. It will not process pre existing lines.
+* By default, it will purge entries in the sqlite database that are older than 1 hour, which can be configured.
+* Setting the `purge_log_entries_seconds` configuration to `0` will disable purging.
 * Install virtual environment: `python -m venv .venv`
 * Activate virtual environment: `source .venv/bin/activate`
 * Install dependencies: `pip3 install --editable .`
