@@ -13,7 +13,7 @@ from app import db
 from app.config import config
 
 date_format = "%d/%b/%Y:%H:%M:%S"
-log_regex = r"(?P<ip>[(\d\.)]+) - (?P<user>.+) \[(?P<date>.*?) [+-](.*?)\] \"(?P<method>\w+) (?P<request_path>.*?) HTTP/(?P<http_version>.*?)\" (?P<status_code>\d+) (?P<response_size>[\-\d]+) \"(?P<referrer>.*?)\" \"(?P<user_agent>.*?)\""
+log_regex = r"(?P<ip>[(\d\.)]+) - (?P<user>.+) \[(?P<date>.*?) [+-](.*?)\] \"(?P<method>\w+) (?P<request_path>.*?) HTTP/(?P<http_version>.*?)\" (?P<status_code>\d+) (?P<response_size>[\-\d]+)"
 compiled = re.compile(log_regex)
 
 

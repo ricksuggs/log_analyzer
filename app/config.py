@@ -11,5 +11,5 @@ config = {
     # purge the log_entries from configured number of hours before current datetime, default 1 hr
     "purge_log_entries_seconds": 60 * 60,
     # sql connection string
-    "sql_connection_string": "log_analyzer.db"
+    "sql_connection_string": "log_analyzer.db",
 }

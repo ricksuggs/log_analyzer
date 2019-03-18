@@ -13,3 +13,9 @@ def test_parse_line():
     )
 
     assert parsed_line
+
+    parsed_line = start.parse_line(
+        '127.0.0.1 - james [09/May/2018:16:00:39 +0000] "GET /report HTTP/1.0" 200 123'
+    )
+
+    assert parsed_line

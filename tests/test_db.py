@@ -42,6 +42,7 @@ def test_alerting_logic_one_alert():
     alerts = db.find_alerts()
     assert len(alerts) == 1
 
+
 def test_alerting_logic_zero_alert():
 
     start_datetime = datetime.utcnow()

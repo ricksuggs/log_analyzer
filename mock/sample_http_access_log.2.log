@@ -1,0 +1,4 @@
+127.0.0.1 - james {timestamp} "GET /report HTTP/1.0" 200 123
+127.0.0.1 - jill {timestamp} "GET /api/user HTTP/1.0" 200 234
+127.0.0.1 - frank {timestamp} "POST /api/user HTTP/1.0" 200 34
+127.0.0.1 - mary {timestamp} "POST /api/user HTTP/1.0" 503 12

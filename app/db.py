@@ -33,9 +33,7 @@ def setup_database():
                 section varchar,
                 http_version varchar,
                 status_code varchar,
-                response_size varchar,
-                referrer varchar,
-                user_agent varchar
+                response_size varchar
             );
         """
         )
@@ -80,9 +78,7 @@ def insert_log_entries(log_entries):
                 section,
                 http_version,
                 status_code,
-                response_size,
-                referrer,
-                user_agent
+                response_size
             ) VALUES (
                 :ip,
                 :user,
@@ -92,9 +88,7 @@ def insert_log_entries(log_entries):
                 :section,
                 :http_version,
                 :status_code,
-                :response_size,
-                :referrer,
-                :user_agent
+                :response_size
             )
         """,
             log_entries,
